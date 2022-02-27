@@ -1,4 +1,15 @@
 {
   "name": "kittyBase",
-  "displayName": "kittyBase"
+  "displayName": "kittyBase",
+  "slug": "kittyBase",
+  "version": "0.0.1",
+  "privacy": "public",
+  "platforms": ["ios", "android", "web"],
+  "orientation": "portrait",
+  "userInterfaceStyle": "automatic",
+  "assetBundlePatterns": ["src/assets/images/*", "src/assets/fonts", "src/layouts/**/assets/*"],
+  "androidStatusBar": {
+    "barStyle": "dark-content",
+    "backgroundColor": "#F7F9FC"
+  }
 }
