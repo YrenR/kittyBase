@@ -6,6 +6,7 @@ import {StatusBar} from '../components/status-bar.component';
 import {AppNavigator} from '../navigation/app.navigator';
 import {AppearanceProvider} from 'react-native-appearance';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
+import appTheme from './app-theme.json';
 import * as eva from '@eva-design/eva';
 
 const App: React.FC = () => {
@@ -13,9 +14,9 @@ const App: React.FC = () => {
     <React.Fragment>
       <IconRegistry icons={[EvaIconsPack, AppIconsPack]} />
       <AppearanceProvider>
-        <ApplicationProvider {...eva} theme={eva.light}>
+        <ApplicationProvider {...eva} theme={{...eva.dark, ...appTheme}}>
           <SafeAreaProvider>
-            <StatusBar animated={true} />
+            <StatusBar animated={true} backgroundColor="#000" />
             <AppNavigator />
           </SafeAreaProvider>
         </ApplicationProvider>

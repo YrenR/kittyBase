@@ -14,7 +14,7 @@ export default ({navigation}: any): React.ReactElement => {
   };
 
   const onSignUpButtonPress = (): void => {
-    navigation && navigation.navigate('SignUp1');
+    navigation && navigation.navigate('SignUp');
   };
 
   return (
@@ -38,7 +38,7 @@ export default ({navigation}: any): React.ReactElement => {
           <Input label="EMAIL" placeholder="Email" status="control" value={email} onChangeText={setEmail} />
           <Input
             style={styles.passwordInput}
-            secureTextEntry={true}
+            secureTextEntry
             placeholder="Password"
             label="PASSWORD"
             status="control"
