@@ -19,9 +19,9 @@ const Home = () => {
         <Text style={styles.text} appearance="hint">
           For example, try changing theme to Dark by using eva.dark
         </Text>
-        {/* <Button style={styles.likeButton} accessoryLeft={HeartIcon}>
+        <Button style={styles.likeButton} accessoryLeft={HeartIcon}>
           LIKE
-        </Button> */}
+        </Button>
       </Layout>
     </>
   );
